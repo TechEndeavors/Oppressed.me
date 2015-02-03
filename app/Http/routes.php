@@ -19,7 +19,9 @@ Route::get('contact', 'PagesController@contact');
 Route::get('about', 'PagesController@about');
 
 Route::get('profiles', 'ProfilesController@index');
-Route::get('profiles/{slug}', 'ProfilesController@show');
+Route::get('profiles/create', 'ProfilesController@create');
+Route::get('profiles/{id}', 'ProfilesController@show');
+Route::post('profiles', 'ProfilesController@store');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

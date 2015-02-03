@@ -11,15 +11,11 @@
 						@if (count($profiles))
 							<ul>
 								@foreach ($profiles as $profile)
-									<li><a href="{{ action('ProfilesController@show', [$profile->slug]) }}">{{$profile->name}}</a> - {{$profile->summary}} (
-									@if ($person->country="US")
-										{{$profile->city}}, {{$profile->state}}
-									@else
-										{{$profile->city}}, {{$profile->country}}
-									@endif
-									)</li>
+									<li><a href="{{ action('ProfilesController@show', [$profile->id]) }}">{{$profile->name}}</a></li>
 								@endforeach
 							</ul>
+						@else
+							<p>No Oppressed.me profiles found</p>
 						@endif
 					</div>
 				</div>
