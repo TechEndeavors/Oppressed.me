@@ -8,7 +8,13 @@
 					<div class="panel-heading">Index</div>
 
 					<div class="panel-body">
-						Still working on this
+						@if (count($people))
+							<ul>
+								@foreach ($people as $person)
+									<li>{{$person}}</li>
+								@endforeach
+							</ul>
+						@endif
 					</div>
 				</div>
 			</div>
