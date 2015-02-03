@@ -18,6 +18,9 @@ Route::get('home', 'HomeController@index');
 Route::get('contact', 'PagesController@contact');
 Route::get('about', 'PagesController@about');
 
+Route::get('profiles', 'ProfilesController@index');
+Route::get('profiles/{slug}', 'ProfilesController@show');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
