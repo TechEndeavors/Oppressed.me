@@ -27,7 +27,7 @@
                         </div>
                         <div class="form-group">
                             {!! Form::label('city', 'City:') !!}
-                            {!! Form::text('slug', null, ['class' => 'form-control']) !!}
+                            {!! Form::text('city', null, ['class' => 'form-control']) !!}
                         </div>
                         <div class="form-group">
                             {!! Form::label('state', 'State:') !!}
@@ -49,6 +49,23 @@
                             {!! Form::label('details', 'Details:') !!}
                             {!! Form::textarea('details', null, ['class' => 'form-control']) !!}
                         </div>
+                        <div class="form-group">
+                            {!! Form::label('charged_at', 'Date Charged:') !!}
+                            {!! Form::input('date', 'charged_at', null, ['class' => 'form-control']) !!}
+                        </div>
+                        <div class="form-group">
+                            {!! Form::label('sentenced_at', 'Date Sentenced:') !!}
+                            {!! Form::input('date', 'sentenced_at', null, ['class' => 'form-control']) !!}
+                        </div>
+                        <div class="form-group">
+                            {!! Form::label('expected_release_at', 'Date Expected to be Released:') !!}
+                            {!! Form::input('date', 'expected_release_at', null, ['class' => 'form-control']) !!}
+                        </div>
+                        <div class="form-group">
+                            {!! Form::label('released_at', 'Date Released from Custody:') !!}
+                            {!! Form::input('date', 'expected_release_at', null, ['class' => 'form-control']) !!}
+                        </div>
+
                         <div class="form-group">
                             {!! Form::submit('Add', ['class' => 'btn btn-primary form-control']) !!}
 
