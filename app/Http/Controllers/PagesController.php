@@ -2,6 +2,7 @@
 
 use oppressed\Http\Requests;
 use oppressed\Http\Controllers\Controller;
+use oppressed\Profile;
 
 use Illuminate\Http\Request;
 
