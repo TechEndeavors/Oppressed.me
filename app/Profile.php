@@ -13,6 +13,7 @@ class Profile extends Model {
         'name',
         'address1',
         'address2',
+        'address3',
         'city',
         'state',
         'zip',
