@@ -8,10 +8,10 @@
 					<div class="panel-heading">Index</div>
 
 					<div class="panel-body">
-						@if (count($people))
+						@if (count($profiles))
 							<ul>
-								@foreach ($people as $person)
-									<li>{{$person}}</li>
+								@foreach ($profiles as $profile)
+									<li>{{$profile}}</li>
 								@endforeach
 							</ul>
 						@endif
