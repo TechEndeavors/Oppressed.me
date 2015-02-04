@@ -19,6 +19,7 @@ class AddProfilesTable extends Migration {
 			$table->string('name');
 			$table->string('address1')->nullable();
 			$table->string('address2')->nullable();
+			$table->string('address3')->nullable();
 			$table->string('city')->nullable();
 			$table->string('state')->nullable();
 			$table->string('zip')->nullable();
@@ -31,6 +32,8 @@ class AddProfilesTable extends Migration {
 			$table->timestamp('released_at')->nullable();
 			$table->timestamps();
 			$table->softDeletes();
+			$table->index('slug');
+			$table->index('released_at');
 		});
 	}
 

@@ -26,7 +26,7 @@
                             {!! Form::text('address2', null, ['class' => 'form-control']) !!}
                         </div>
                         <div class="form-group">
-                            {!! Form::label('address3', 'Address (Second Line):') !!}
+                            {!! Form::label('address3', 'Address (Third Line):') !!}
                             {!! Form::text('address3', null, ['class' => 'form-control']) !!}
                         </div>
                         <div class="form-group">
